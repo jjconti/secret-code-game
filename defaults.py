@@ -24,3 +24,5 @@ fonth = 60
 
 reglas_path = 'reglas.png'
 creditos_path = 'creditos.png'
+
+menu_music = 'TwistAndShout.mid'

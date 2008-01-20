@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import *
 from random import choice
+import sys
 
 from defaults import *
 
@@ -20,6 +21,8 @@ class SimpleScreen(object):
             self.clock.tick(10)
 
             for event in pygame.event.get():
+                if event.type == QUIT:
+                    sys.exit(0)
                 if event.type == KEYDOWN:
                     self.done = False
 

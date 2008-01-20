@@ -30,7 +30,11 @@ def main():
     img_reglas = load_image(reglas_path)
     img_creditos = load_image(creditos_path)
 
+    pygame.mixer.music.load(menu_music)
+    pygame.mixer.music.play()
+
     while True:
+
         menu = Menu(screen, font, ['Jugar', 'Reglas', 'Creditos', 'Salir'])
         op = menu.main_loop()
         
